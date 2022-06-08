@@ -19,3 +19,5 @@ class Student(Person):
                 students.append(Student(**dict(row)))
         return students
 
+    def __str__(self):
+        return f"{self.name.title()}\n---------------\nage: {self.age}\nid: {self.school_id}"
